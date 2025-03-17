@@ -132,6 +132,7 @@ int main(int argc, char *argv[])
         std::cerr << "Usage: " << argv[0] << "adbpath sleeptime ADBDEVICE/ADBDEVICE1/ADBDEVICE2 ...\n";
         std::cerr << "Example: " << argv[0]
                   << "adb.exe 5000 127.0.0.1:5555/127.0.0.1:5570/127.0.0.1:5585/127.0.0.1:5590/127.0.0.1:5595\n";
+        exit(EXIT_FAILURE);
     }
     int sleep_time{::atoi(argv[2])};
     adb_exe.append(argv[1]);
